@@ -1,7 +1,9 @@
+
 *{
     margin: 0;
     padding: 0;
-    font-family: sans-serif;
+    font-family: "Roboto", sans-serif;
+
 }
 
 #head{
@@ -23,6 +25,7 @@
     padding-bottom: 0px;
     padding-top: 25%;
     padding-right: 10px;
+    transition: 0.3s ease-in-out;
 }
 
 #nav1{
@@ -56,7 +59,8 @@
 section{
     display: grid;
     grid-template-columns: 20% 1fr;
-    gap: 2%;
+    gap: 5%;
+    padding-left: 30px;
 }
 
     #left{
@@ -66,6 +70,7 @@ section{
         width: 20vw;
         background-color: #ffd5db;
         border-radius: 10px;
+        height: 530px;
     }
 
         #top{
@@ -161,6 +166,7 @@ section{
         justify-content: center;
         border-radius: 50px;
         color: white;
+        transition: 0.3s ease-in-out;
         
     }
 
@@ -174,7 +180,7 @@ section{
         border-radius: 50px;
         color: #d43f69;
         border: 2px solid #d43f69;
-        
+        transition: 0.3s ease-in-out;
     }
 
 #right{
@@ -205,24 +211,72 @@ section{
 
 #catalog{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 25%);
     grid-template-rows: repeat(2, 1fr);  
     row-gap: 35px;
+    column-gap: 75px;
 }
 
 .cupcakes{
     display: flex;
-    border: 2px solid #d43f69;
-    border-radius: 10px;
+    border: 3px solid #d43f69;
+    border-radius: 30px;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     width: 280px;
-    height: 300px;
+    height: auto;
+    color: #f892a1;
+    align-items: center;
+    padding: 10px;
+    transition: 0.3s ease-in-out;
+
 }
 
 .imgcup{
     height: 200px;
     width: 200px;
-    
+}
+
+
+
+.textcup{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-left: 15px;
+    font-size: 150%;
+    width: 100%;
+    height: 30%;
+}
+
+.stars{
+    padding-top: 10px;
+    height: 25px;
+}
+
+.price{
+    display: flex;
+    justify-content: space-between;
+    color: black;
+    align-items: center;
+    padding: 0 15px 15px 0;
+}
+
+.div-header__icon{
+    padding-right: 20px;
+}
+
+.cupcakes:hover{
+    transform: scale(1.05);
+    transition: 0.3s ease-in-out;
+}
+
+.icon2:hover{
+    transform: scale(1.1);
+    transition: 0.3s ease-in-out;
+}
+
+#bottom2:hover,
+#bottom1:hover{
+    transform: scale(1.1);
+    transition: 0.3s ease-in-out;
 }
